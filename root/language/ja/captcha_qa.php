@@ -40,6 +40,7 @@ $lang = array_merge($lang, array(
 	'CAPTCHA_QA'				=> 'Q&amp;A',
 	'CONFIRM_QUESTION_EXPLAIN'	=> '答えを正確にご入力ください。答えられるかどうかでスパムボットか否かを判定します。',
 	'CONFIRM_QUESTION_WRONG'	=> 'クイズの答え が不正解です',
+	'CONFIRM_QUESTION_MISSING'	=> 'CAPTCHA用の質問が取得できませんでした。管理人にご連絡ください。',
 
 	'QUESTION_ANSWERS'			=> '答え',
 	'ANSWERS_EXPLAIN'			=> '答えを正確にご入力ください。答えは複数設定することが可能です。その場合、１行につき１つの答えをご入力ください。',
@@ -60,5 +61,4 @@ $lang = array_merge($lang, array(
 
 	'QA_ERROR_MSG'				=> '全てのクイズに答えてください',
 	'QA_LAST_QUESTION'			=> 'この CAPTCHAプラグイン が有効な間は “クイズ” を1つ残らず削除することはできません',
-	
 ));

@@ -593,7 +593,8 @@ $lang = array_merge($lang, array(
 
 	'LOG_ERROR_JABBER'		=> '<strong>Jabberエラー</strong><br />» %s',
 	'LOG_ERROR_EMAIL'		=> '<strong>メールエラー</strong><br />» %s',
-	
+	'LOG_ERROR_CAPTCHA'		=> '<strong>CAPTCHAエラー</strong><br />» %s',
+
 	'LOG_FORUM_ADD'							=> '<strong>フォーラムを作成しました</strong><br />» %s',
 	'LOG_FORUM_COPIED_PERMISSIONS'			=> '<strong>フォーラムパーミッションを</strong> %1$s から<strong>コピーしました</strong><br />» %2$s',
 	'LOG_FORUM_DEL_FORUM'					=> '<strong>フォーラムを削除しました</strong><br />» %s',
