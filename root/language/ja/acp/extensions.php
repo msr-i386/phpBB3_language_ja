@@ -68,6 +68,12 @@ $lang = array_merge($lang, array(
 	'EXTENSION_NAME'			=> '拡張機能の名前',
 	'EXTENSION_ACTIONS'			=> 'アクション',
 	'EXTENSION_OPTIONS'			=> 'オプション',
+	'EXTENSION_INSTALL_HEADLINE'=> '拡張機能をインストールするには',
+	'EXTENSION_INSTALL_EXPLAIN'	=> '<ol>
+			<li>phpBBの拡張機能データベースから拡張機能をダウンロードします</li>
+			<li>ダウンロードしたファイルを解凍し、<samp>ext/</samp>ディレクトリにアップロードします</li>
+			<li>拡張機能を有効化します</li>
+		</ol>',
 	'EXTENSION_UPDATE_HEADLINE'	=> '拡張機能をアップデートするには',
 	'EXTENSION_UPDATE_EXPLAIN'	=> '<ol>
 			<li>拡張機能を無効化します</li>
@@ -118,6 +124,8 @@ $lang = array_merge($lang, array(
 	'VERSIONCHECK_FORCE_UPDATE_ALL'		=> 'バージョンを全て再チェックする',
 	'FORCE_UNSTABLE'					=> 'アップデートを強制しない',
 	'EXTENSIONS_VERSION_CHECK_SETTINGS'	=> 'バージョンチェックの設定',
+
+	'BROWSE_EXTENSIONS_DATABASE'		=> '拡張機能データベースを参照する',
 
 	'META_FIELD_NOT_SET'	=> '必須なメタフィールド %s がセットされていません',
 	'META_FIELD_INVALID'	=> 'メタフィールド %s が不正です',

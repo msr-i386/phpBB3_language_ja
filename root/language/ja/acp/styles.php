@@ -83,4 +83,6 @@ $lang = array_merge($lang, array(
 	'STYLE_USED_BY'				=> '使用ユーザー数（ボット含む）',
 
 	'UNINSTALL_DEFAULT'		=> 'デフォルトスタイルをアンインストールする事はできません',
+
+	'BROWSE_STYLES_DATABASE'	=> 'スタイルデータベースを参照する',
 ));

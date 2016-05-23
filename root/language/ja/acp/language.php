@@ -73,4 +73,6 @@ $lang = array_merge($lang, array(
 	'THOSE_MISSING_LANG_VARIABLES'		=> '次の言語値が言語パック “%s” 内に見つかりませんでした',
 
 	'UNINSTALLED_LANGUAGE_PACKS'	=> '未インストール状態の言語パック',
+
+	'BROWSE_LANGUAGE_PACKS_DATABASE'	=> '言語パックデータベースを参照する',
 ));
