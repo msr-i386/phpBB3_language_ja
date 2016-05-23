@@ -557,6 +557,7 @@ $lang = array_merge($lang, array(
 	'LOG_LOCK_POST'				=> '<strong>記事を凍結しました</strong><br />» %s',
 	'LOG_MERGE'					=> '<strong>記事をトピックに統合しました</strong><br />» %s',
 	'LOG_MOVE'					=> '<strong>トピックを移動しました</strong><br />» from %1$s to %2$s',
+	'LOG_MOVED_TOPIC'			=> '<strong>トピックを移動しました</strong><br />» %s',
 	'LOG_PM_REPORT_CLOSED'		=> '<strong>通報 [ PM ] の審査を完了しました</strong><br />» %s',
 	'LOG_PM_REPORT_DELETED'		=> '<strong>通報 [ PM ] を削除しました</strong><br />» %s',
 	'LOG_POST_APPROVED'			=> '<strong>記事を承認しました</strong><br />» %s',

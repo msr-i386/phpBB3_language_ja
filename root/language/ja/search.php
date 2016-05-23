@@ -71,6 +71,7 @@ $lang = array_merge($lang, array(
 	'NO_RECENT_SEARCHES'	=> '最近検索されたキーワードはありません',
 	'NO_SEARCH'				=> '検索機能を使用する権限がありません',
 	'NO_SEARCH_RESULTS'		=> '検索に一致する記事が見つかりませんでした',
+	'NO_SEARCH_LOAD'		=> '申し訳ありませんが、現在サーバーが高負荷のため検索機能を使用することができません。後でもう一度お試しください。',
 	'NO_SEARCH_TIME'		=> array(
 		1	=> '連続して検索することはできません。数分後に再度お試しください。',
 	//	2	=> 'Sorry but you cannot use search at this time. Please try again in %d seconds.',

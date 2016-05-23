@@ -52,6 +52,13 @@ $lang = array_merge($lang, array(
 	'MIGRATION_SCHEMA_DONE'				=> 'インストールされたスキーマ: %1$s; 処理時間: %2$.2f 秒',
 	'MIGRATION_SCHEMA_RUNNING'			=> 'インストールされたスキーマ: %s.',
 
+	'MIGRATION_INVALID_DATA_MISSING_CONDITION'		=> 'A migration is invalid. An if statement helper is missing a condition.',
+	'MIGRATION_INVALID_DATA_MISSING_STEP'			=> 'A migration is invalid. An if statement helper is missing a valid call to a migration step.',
+	'MIGRATION_INVALID_DATA_CUSTOM_NOT_CALLABLE'	=> 'A migration is invalid. A custom callable function could not be called.',
+	'MIGRATION_INVALID_DATA_UNKNOWN_TYPE'			=> 'A migration is invalid. An unknown migration tool type was encountered.',
+	'MIGRATION_INVALID_DATA_UNDEFINED_TOOL'			=> 'A migration is invalid. An undefined migration tool was encountered.',
+	'MIGRATION_INVALID_DATA_UNDEFINED_METHOD'		=> 'A migration is invalid. An undefined migration tool method was encountered.',
+
 	'MODULE_ERROR'						=> 'モジュール構成中にエラーが発生しました: %s',
 	'MODULE_INFO_FILE_NOT_EXIST'		=> 'モジュール情報ファイルがありません: %2$s',
 	'MODULE_NOT_EXIST'					=> 'モジュールがありません: %s',

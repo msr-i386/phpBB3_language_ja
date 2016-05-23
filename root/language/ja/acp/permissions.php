@@ -54,7 +54,7 @@ $lang = array_merge($lang, array(
 	
 		<br />
 	
-		<p>パーミッションの設定と管理についてのより詳しい説明が <a href="https://www.phpbb.com/support/documentation/3.0/quickstart/quick_permissions.html">Quick Start Guide : Chapter 1.5</a> に載ってます。</p>
+		<p>パーミッションの設定と管理についてのより詳しい説明が <a href="https://www.phpbb.com/support/docs/en/3.1/ug/quickstart/permissions/">User Guide : Setting permissions</a> に載ってます。</p>
 	',
 
 	'ACL_NEVER'				=> 'Never',
