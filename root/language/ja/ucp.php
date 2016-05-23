@@ -338,7 +338,7 @@ $lang = array_merge($lang, array(
 	'NOTIFICATION_TYPE_QUOTE'							=> 'あなたの記事が引用されました',
 	'NOTIFICATION_TYPE_REPORT'							=> '通報があります',
 	'NOTIFICATION_TYPE_TOPIC'							=> 'ウォッチ中のフォーラムでトピックが作成されました',
-	'NOTIFICATION_TYPE_ADMIN_ACTIVATE_USER'				=> '新規アカウントがアカウントの有効化を必要としています',
+	'NOTIFICATION_TYPE_ADMIN_ACTIVATE_USER'				=> 'アカウントの有効化が必要です',
 
 	'NOTIFY_METHOD'					=> '通知方法',
 	'NOTIFY_METHOD_BOTH'			=> '両方',

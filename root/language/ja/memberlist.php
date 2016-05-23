@@ -101,6 +101,7 @@ $lang = array_merge($lang, array(
 	'LOGIN_EXPLAIN_SEARCHUSER'	=> 'ユーザーを検索するにはユーザー登録とログインが必要です',
 	'LOGIN_EXPLAIN_VIEWPROFILE'	=> 'プロフィールを表示するにはユーザー登録とログインが必要です',
 
+	'MANAGE_GROUP'			=> 'グループの管理',
 	'MORE_THAN'				=> 'より多い',
 
 	'NO_CONTACT_FORM'		=> 'お問い合わせのフォームは無効化されています',
