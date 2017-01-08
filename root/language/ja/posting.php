@@ -183,8 +183,10 @@ $lang = array_merge($lang, array(
 	'NO_POLL_TITLE'				=> '投票のお題をご入力ください',
 	'NO_POST'					=> 'その記事は存在しません',
 	'NO_POST_MODE'				=> '投稿モードが指定されていません',
+	'NO_TEMP_DIR'				=> '一時フォルダーが見つからない、または書き込み可能ではありません',
 
 	'PARTIAL_UPLOAD'			=> 'ファイルは一部だけアップロードされました',
+	'PHP_UPLOAD_STOPPED'		=> 'A PHP extension has stopped the file upload.',
 	'PHP_SIZE_NA'				=> '添付ファイルのサイズが大き過ぎます。<br />PHP設定ファイル php.ini の設定オプション upload_max_filesize の値の取得に失敗しました。',
 	'PHP_SIZE_OVERRUN'			=> '添付ファイルのサイズが大き過ぎます。アップロードできるファイルの最大サイズは %1$d %2$s です。<br />PHP設定ファイル php.ini の設定オプション upload_max_filesize の値を phpBB3 が上書きすることはできません。',
 	'PLACE_INLINE'				=> 'インライン表示',

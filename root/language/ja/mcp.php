@@ -135,6 +135,7 @@ $lang = array_merge($lang, array(
 	'LOCK_TOPICS_CONFIRM'		=> '選択したトピックを本当に閉鎖してもよろしいですか？',
 	'LOGS_CURRENT_TOPIC'		=> '次のトピックのログを現在見ています:',
 	'LOGIN_EXPLAIN_MCP'			=> 'このフォーラムを管理するにはログインが必要です。',
+	'LOGVIEW_VIEWPOST'			=> '記事を見る',
 	'LOGVIEW_VIEWTOPIC'			=> 'トピックを見る',
 	'LOGVIEW_VIEWLOGS'			=> 'トピックログを見る',
 	'LOGVIEW_VIEWFORUM'			=> 'フォーラムを見る',

@@ -108,6 +108,8 @@ $lang = array_merge($lang, array(
 	'ACP_GROUPS_PERMISSIONS'		=> 'グローバルパーミッション [ グループ ]',
 	'ACP_GROUPS_POSITION'			=> 'グループの順序',
 	
+	'ACP_HELP_PHPBB'			=> 'Help support phpBB',
+
 	'ACP_ICONS'					=> 'トピックアイコン',
 	'ACP_ICONS_SMILIES'			=> 'トピックアイコン/スマイリー',
 	'ACP_INACTIVE_USERS'		=> '無効アカウント',
@@ -167,7 +169,6 @@ $lang = array_merge($lang, array(
 	'ACP_SEARCH_SETTINGS'		=> '検索の設定',
 
 	'ACP_SECURITY_SETTINGS'		=> 'セキュリティの設定',
-	'ACP_SEND_STATISTICS'		=> '設定情報の提供',
 	'ACP_SERVER_CONFIGURATION'	=> 'サーバの構成',
 	'ACP_SERVER_SETTINGS'		=> 'サーバの設定',
 	'ACP_SIGNATURE_SETTINGS'	=> 'サインの設定',
@@ -225,13 +226,27 @@ $lang = array_merge($lang, array(
 
 	'BACK'					=> '戻る',
 
+	'CANNOT_CHANGE_FILE_GROUP'	=> 'ファイルグループを変更できません',
+	'CANNOT_CHANGE_FILE_PERMISSIONS'	=> 'ファイルパーミッションを変更できません',
+	'CANNOT_COPY_FILES'		=> 'ファイルをコピーできません',
+	'CANNOT_CREATE_SYMLINK'	=> 'シンボリックリンクを作成できません',
+	'CANNOT_DELETE_FILES'	=> 'システムからファイルを削除できません',
+	'CANNOT_DUMP_FILE'		=> 'ファイルをダンプできません',
+	'CANNOT_MIRROR_DIRECTORY'	=> 'ディレクトリをミラーリングできません',
+	'CANNOT_RENAME_FILE'	=> 'システムからファイルの名前を変更できません',
+	'CANNOT_TOUCH_FILES'	=> 'ファイルが存在するかどうかを判断できません',
+
+	'CONTAINER_EXCEPTION' => 'phpBBは、インストールされた拡張機能のためにコンテナを構築する際にエラーが発生しました。このため、すべての拡張機能が一時的に無効になっています。フォーラムキャッシュを消去してみてください。コンテナのエラーが解決されると、すべての拡張機能が自動的に再度有効になります。もしこのエラーが継続して発生するようであれば、<a href="https://www.phpbb.com/support">phpBB.com</a>にアクセスしてサポートを受けてください。',
+	'EXCEPTION' => '例外',
+
 	'COLOUR_SWATCH'			=> '色の見本',
 	'CONFIG_UPDATED'		=> '設定の更新に成功しました',
 	'CRON_LOCK_ERROR'		=> 'cronロック を取得できませんでした',
 	'CRON_NO_SUCH_TASK'		=> 'cronタスク “%s” が見つかりませんでした',
 	'CRON_NO_TASK'			=> '今すぐに実行が必要な cronタスク はありません',
 	'CRON_NO_TASKS'			=> 'cronタスク が１つも見つかりませんでした',
-		
+	'CURRENT_VERSION'		=> '現在のバージョン',
+
 	'DEACTIVATE'				=> '無効にする',
 	'DIRECTORY_DOES_NOT_EXIST'	=> '入力したパス “%s” にディレクトリが存在していません',
 	'DIRECTORY_NOT_DIR'			=> '入力したパス “%s” はディレクトリではありません',
@@ -256,6 +271,7 @@ $lang = array_merge($lang, array(
 	'IP'					=> 'IPアドレス',
 	'IP_HOSTNAME'			=> 'IPアドレス/ホスト名',
 
+	'LATEST_VERSION'		=> '最新バージョン',
 	'LOAD_NOTIFICATIONS'			=> '通知を表示する',
 	'LOAD_NOTIFICATIONS_EXPLAIN'	=> '通知のリストを各ページ (大抵はページのトップ）に表示させます。',
 	'LOGGED_IN_AS'			=> 'ログイン名：',
@@ -288,7 +304,9 @@ $lang = array_merge($lang, array(
 	'PERMISSIONS_TRANSFERRED_EXPLAIN'	=> 'ユーザー %1$s のパーミッションをテストしています。Adminパーミッション をテストすることはできないため、パーミッションテスト中は AdminCP へ入室することはできません。あなたはいつでも<a href="%2$s"><strong>パーミッションテストを終了する</strong></a>事ができます。',
 	'PROCEED_TO_ACP'					=> '%sAdminCP へ%s',
 
+	'RELEASE_ANNOUNCEMENT'		=> 'お知らせ',
 	'REMIND'							=> 'アカウント有効化メールの送信',
+	'REPARSE_LOCK_ERROR'				=> '再解析はすでに別のプロセスによって進行中です。',
 	'RESYNC'							=> '同期',
 
 	'RUNNING_TASK'			=> '実行中のタスク: %s',
@@ -308,6 +326,10 @@ $lang = array_merge($lang, array(
 	'UCP'					=> 'ユーザーCP',
 	'USERNAMES_EXPLAIN'		=> '１行につき１つのユーザー名をご入力ください',
 	'USER_CONTROL_PANEL'	=> 'ユーザーコントロールパネル',
+
+	'UPDATE_NEEDED'			=> '掲示板は最新ではありません。',
+	'UPDATE_NOT_NEEDED'		=> '掲示板は最新です。',
+	'UPDATES_AVAILABLE'		=> '利用可能なアップデート:',
 
 	'WARNING'				=> '警告',
 ));
@@ -419,6 +441,11 @@ $lang = array_merge($lang, array(
 	'VALUE'						=> '値',
 	'VERSIONCHECK_FAIL'			=> '最新バージョン情報の取得に失敗しました',
 	'VERSIONCHECK_FORCE_UPDATE'	=> 'バージョン再チェック',
+	'VERSION_CHECK'				=> 'バージョンチェック',
+	'VERSION_CHECK_EXPLAIN'		=> 'インストールされている phpBB が最新かどうかをチェックします。',
+	'VERSION_NOT_UP_TO_DATE_ACP'	=> 'インストールされている phpBB は最新ではありません。<br />以下は、リリース情報へのリンクです。詳細情報と更新手順が記載されています。',
+	'VERSION_NOT_UP_TO_DATE_TITLE'	=> 'インストールされている phpBB は最新ではありません。',
+	'VERSION_UP_TO_DATE_ACP'	=> 'インストールされている phpBB は最新です。現時点で利用可能なアップデートはありません。',
 	'VIEW_ADMIN_LOG'			=> 'Adminログ ページへ',
 	'VIEW_INACTIVE_USERS'		=> '無効アカウント ページへ',
 
@@ -451,16 +478,18 @@ $lang = array_merge($lang, array(
 	'USER_IS_INACTIVE'		=> '無効アカウント',
 ));
 
-// Send statistics page
+// Help support phpBB page
 $lang = array_merge($lang, array(
 	'EXPLAIN_SEND_STATISTICS'	=> 'サーバと掲示板の設定情報を phpBB Limited に提供します。この情報は主に phpBB の今後の開発方針を決定する際に参考として利用されます。ユーザーの皆様のご協力をお願い致します。またこの情報は一般公開され、プログラミング言語 PHP の開発にも利用されます。提供情報には、ユーザーまたはサイトを特定するような情報は一切含まれませんのでご安心ください - それら個人情報は全て <strong>匿名</strong> として扱われます。',
 	'EXPLAIN_SHOW_STATISTICS'	=> '下のボタンをクリックすると提供情報の全データが表示されます',
 	'DONT_SEND_STATISTICS'		=> 'AdminCP トップに戻る',
 	'GO_ACP_MAIN'				=> 'AdminCP トップへ',
 	'HIDE_STATISTICS'			=> '提供情報を隠す',
-	'SEND_STATISTICS'			=> 'サーバと掲示板の設定情報を phpBB Limited に提供する',
+	'SEND_STATISTICS'			=> '統計情報を送信する',
+	'SEND_STATISTICS_LONG'		=> '統計情報を phpBB Limited に提供する',
 	'SHOW_STATISTICS'			=> '提供情報を表示する',
 	'THANKS_SEND_STATISTICS'	=> 'ご協力していただきありがとうございました',
+	'FAIL_SEND_STATISTICS'		=> 'phpBB は統計情報を送信できませんでした',
 ));
 
 // Log Entries
@@ -793,4 +822,5 @@ $lang = array_merge($lang, array(
 	'LOG_EXT_ENABLE'	=> '<strong>拡張機能を有効化しました</strong><br />» %s',
 	'LOG_EXT_DISABLE'	=> '<strong>拡張機能を無効化しました</strong><br />» %s',
 	'LOG_EXT_PURGE'		=> '<strong>拡張機能のデータを削除しました</strong><br />» %s',
+	'LOG_EXT_UPDATE'	=> '<strong>拡張機能をアップデートしました</strong><br />» %s',
 ));

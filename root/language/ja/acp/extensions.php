@@ -43,6 +43,7 @@ $lang = array_merge($lang, array(
 	'EXTENSION_NOT_AVAILABLE'	=> '選択した拡張機能は利用できません。phpBB と PHP のバージョンをご確認ください（詳細情報ページをご覧ください）。',
 	'EXTENSION_DIR_INVALID'		=> '選択した拡張機能はディレクトリ構成が不正なため、有効化できません',
 	'EXTENSION_NOT_ENABLEABLE'	=> '選択した拡張機能は有効化できません。拡張機能を利用するための必須条件をご確認ください。',
+	'EXTENSION_NOT_INSTALLED'	=> '拡張機能 %s は利用できません。正しくインストールされたかどうかご確認ください。',
 
 	'DETAILS'				=> '詳細情報',
 

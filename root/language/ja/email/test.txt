@@ -1,0 +1,9 @@
+Subject: phpBB の送信メール設定が正しく設定できています
+
+{USERNAME} さん
+
+このメールを受信した場合は、phpBB は送信メールの設定が正しく設定できています。
+
+ヘルプが必要な場合は、phpBB サポートフォーラム - https://www.phpbb.com/community/ をご参照ください。
+
+{EMAIL_SIG}

@@ -99,6 +99,7 @@ $lang = array_merge($lang, array(
 	'ALLOW_TOPIC_NOTIFY'		=> 'トピックのウォッチを許可する',
 	'BOARD_PM'					=> 'プライベートメッセージを許可する',
 	'BOARD_PM_EXPLAIN'			=> '登録ユーザーがプライベートメッセージ機能を利用できるようになります',
+	'ALLOW_BOARD_NOTIFICATIONS' => '掲示板の通知を許可する',
 ));
 
 // Avatar Settings
@@ -349,6 +350,8 @@ $lang = array_merge($lang, array(
 
 	'COOKIE_DOMAIN'				=> 'Cookieドメイン',
 	'COOKIE_NAME'				=> 'Cookie名',
+	'COOKIE_NOTICE'				=> 'Cookie の通知',
+	'COOKIE_NOTICE_EXPLAIN'		=> 'Cookie の通知を有効にすると、掲示板にアクセスしたユーザーに表示されるようになります。これは、掲示板の内容や有効な拡張機能によって法律で必要となる場合があります。',
 	'COOKIE_PATH'				=> 'Cookieパス',
 	'COOKIE_SECURE'				=> 'Cookieセキュア',
 	'COOKIE_SECURE_EXPLAIN'		=> 'もしサーバが SSL経由 で動作している場合は有効にしてください。そうでない場合は無効のままにしてください。もし SSL経由 でないサーバ上で有効に設定してしまった場合、リダイレクト中にサーバエラーが発生するでしょう。',
@@ -534,6 +537,8 @@ $lang = array_merge($lang, array(
 	'REFERRER_VALID_EXPLAIN'		=> '有効にした場合、POSTリクエスト 受信時にリファラ情報がチェックされ、CSRF（クロスサイトリクエストフォージェリ） から掲示板を守ります。掲示板が複数のドメインを使用している場合、または他サーバでログイン認証を行っている場合は問題が生じる可能性があります。',
 	'TPL_ALLOW_PHP'					=> 'テンプレートファイル内で PHPコード の使用を許可する',
 	'TPL_ALLOW_PHP_EXPLAIN'			=> 'このオプションが有効な場合、テンプレートファイル内の <code>PHP</code> と <code>INCLUDEPHP</code> 宣言部分は認識されプログラム処理されます',
+	'UPLOAD_CERT_VALID'				=> 'アップロード証明書を検証する',
+	'UPLOAD_CERT_VALID_EXPLAIN'		=> '有効にすると、リモートアップロードの証明書が有効になります。これには、CA バンドルを php.ini の<samp>openssl.cafile</samp> や <samp>curl.cainfo</samp>設定で定義する必要があります。',
 ));
 
 // Email Settings
@@ -558,6 +563,8 @@ $lang = array_merge($lang, array(
 	'EMAIL_SIG_EXPLAIN'				=> 'ここに書かれた内容は掲示板が送信する全メールに追記されます',
 	'ENABLE_EMAIL'					=> 'メール送信機能',
 	'ENABLE_EMAIL_EXPLAIN'			=> '無効に設定した場合、掲示板がメールを送信することはありません。<em>“ユーザー登録の設定”ページ における “アカウントの有効化”設定オプション で選択肢 “ユーザー” または “Admin” を出現させるにはこの機能を有効にしておく必要があります。もしそこで "ユーザー" または "Admin" を選択していて且つこのメール送信機能を無効にした場合、ユーザー登録は停止されます。</em>',
+	'SEND_TEST_EMAIL'				=> 'テストメールを送信',
+	'SEND_TEST_EMAIL_EXPLAIN'		=> 'アカウントに定義されたメールアドレスにテストメールを送信します。',
 	'SMTP_AUTH_METHOD'				=> 'SMTP認証方式',
 	'SMTP_AUTH_METHOD_EXPLAIN'		=> '“SMTPユーザー名”オプション と “SMTPパスワード”オプション が設定された場合のみ使用されます。認証方式が判らない場合、プロバイダにどの認証方式を使用しているか問い合わせてください。',
 	'SMTP_CRAM_MD5'					=> 'CRAM-MD5',
@@ -574,6 +581,7 @@ $lang = array_merge($lang, array(
 	'SMTP_SETTINGS'					=> 'SMTP設定',
 	'SMTP_USERNAME'					=> 'SMTPユーザー名',
 	'SMTP_USERNAME_EXPLAIN'			=> 'SMTPサーバ が要求する場合のみご入力ください',
+	'TEST_EMAIL_SENT'				=> 'テストメールの送信が完了しました。<br />受信できない場合は、メールアドレスが正しいことを確認してください。<br /><br />ヘルプが必要な場合は、<a href="https://www.phpbb.com/community/">phpBB サポートフォーラム</a>にアクセスしてください。',
 	'USE_SMTP'						=> 'SMTPサーバ の使用',
 	'USE_SMTP_EXPLAIN'				=> 'PHP のメール関数を使うかわりに SMTPサーバ を使いたい場合、 “はい” を選択してください',
 ));

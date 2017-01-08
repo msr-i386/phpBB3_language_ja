@@ -70,9 +70,6 @@ $lang = array_merge($lang, array(
 
 	'CAT_FLASH_FILES'			=> 'Flashファイル',
 	'CAT_IMAGES'				=> '画像ファイル',
-	'CAT_QUICKTIME_FILES'		=> 'Quicktimeファイル',
-	'CAT_RM_FILES'				=> 'RealMediaファイル',
-	'CAT_WM_FILES'				=> 'WindowsMediaファイル',
 	'CHECK_CONTENT'				=> '添付ファイルの MIME Type をチェックする',
 	'CHECK_CONTENT_EXPLAIN'		=> 'ブラウザによっては MIME Type を誤ってファイルをアップロードしてしまう事があります。このオプションを有効にした場合、もしそのようなファイルがアップロードされても phpBB はそのファイルを拒否します。',
 	'CREATE_GROUP'				=> '拡張子グループの作成',
@@ -105,9 +102,6 @@ $lang = array_merge($lang, array(
 	'EXT_GROUP_FLASH_FILES'			=> 'Flashファイル',
 	'EXT_GROUP_IMAGES'				=> '画像ファイル',
 	'EXT_GROUP_PLAIN_TEXT'			=> 'プレーンテキスト',
-	'EXT_GROUP_QUICKTIME_MEDIA'		=> 'Quicktime Media',
-	'EXT_GROUP_REAL_MEDIA'			=> 'Real Media',
-	'EXT_GROUP_WINDOWS_MEDIA'		=> 'Windows Media',
 
 	'FILES_GONE'			=> '添付ファイルの存在がいくつか確認できませんでした。既に削除されている可能性があります。存在が確認された添付ファイルについては全て削除しました。',
 	'FILES_STATS_WRONG'		=> '添付ファイルの統計データが不正確なためデータを同期する必要があります。実際のデータ: ファイル数 = %1$d、ファイルサイズの合計 = %2$s。<br />同期するには %3$sこちら%4$s をクリックしてください。',

@@ -40,13 +40,13 @@ $lang = array_merge($lang, array(
 	'RECAPTCHA_LANG'				=> 'ja',
 	'RECAPTCHA_NOT_AVAILABLE'		=> 'reCaptcha を利用するには <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a> でアカウントを作成する必要があります',
 	'CAPTCHA_RECAPTCHA'				=> 'reCaptcha',
-	'RECAPTCHA_INCORRECT'			=> '入力した 認証コード が間違っています',
+	'RECAPTCHA_INCORRECT'			=> '提供された解答が間違っています',
+	'RECAPTCHA_NOSCRIPT'			=> '認証するには JavaScript を有効にしてください。',
 
 	'RECAPTCHA_PUBLIC'				=> 'reCaptcha公開キー',
 	'RECAPTCHA_PUBLIC_EXPLAIN'		=> 'reCaptcha公開キー は <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a> から入手できます',
 	'RECAPTCHA_PRIVATE'				=> 'reCaptcha非公開キー',
 	'RECAPTCHA_PRIVATE_EXPLAIN'		=> 'reCaptcha非公開キー は <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a> から入手できます',
 
-	'RECAPTCHA_EXPLAIN'				=> '不正プログラムによるアクセスを防ぐため、reCaptcha 認証コードの入力を強制しています。表示されている 2 つのワードをテキストフィールドにご入力ください。',
-	'RECAPTCHA_SOCKET_ERROR'		=> 'reCAPTCHAサービス への接続に何らかの問題があります: ソケットのオープンに失敗しました。しばらく待ってからもう一度お試しください。',
+	'RECAPTCHA_EXPLAIN'				=> '不正プログラムによるアクセスを防ぐため、reCaptcha 認証を強制しています。画面に従って認証を行ってください。',
 ));

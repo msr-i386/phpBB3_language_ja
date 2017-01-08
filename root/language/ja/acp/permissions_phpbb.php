@@ -120,6 +120,7 @@ $lang = array_merge($lang, array(
 		'ACL_F_POST'		=> '新規トピックの作成',
 		'ACL_F_STICKY'		=> '注目トピックの作成',
 		'ACL_F_ANNOUNCE'	=> '告知トピックの作成',
+		'ACL_F_ANNOUNCE_GLOBAL'	=> '全体の告知トピックの作成',
 		'ACL_F_REPLY'		=> 'トピックへ返信',
 		'ACL_F_EDIT'		=> '記事の編集',
 		'ACL_F_DELETE'		=> '記事の削除',

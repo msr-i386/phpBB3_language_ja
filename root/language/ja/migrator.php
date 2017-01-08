@@ -37,9 +37,9 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'CONFIG_NOT_EXIST'					=> 'The config setting "%s" unexpectedly does not exist.',
+	'CONFIG_NOT_EXIST'					=> '構成設定 "%s" が存在しません。',
 
-	'GROUP_NOT_EXIST'					=> 'The group "%s" unexpectedly does not exist.',
+	'GROUP_NOT_EXIST'					=> 'グループ "%s" が存在しません',
 
 	'MIGRATION_APPLY_DEPENDENCIES'		=> 'Apply dependencies of %s.',
 	'MIGRATION_DATA_DONE'				=> 'インストールされたデータ: %1$s; 処理時間: %2$.2f 秒',
@@ -48,10 +48,18 @@ $lang = array_merge($lang, array(
 	'MIGRATION_EFFECTIVELY_INSTALLED'	=> 'データの移転は既に完了しています: %s',
 	'MIGRATION_EXCEPTION_ERROR'			=> 'リクエスト処理の実行中に問題が発生したため、処理を中断しました。エラー発生前の状態に出来る限り巻き戻しましたが、本当に巻き戻ったかどうかを掲示板をチェックして確かめるべきです。',
 	'MIGRATION_NOT_FULFILLABLE'			=> 'The migration "%1$s" is not fulfillable, missing migration "%2$s".',
+	'MIGRATION_NOT_INSTALLED'			=> 'The migration "%s" is not installed.',
 	'MIGRATION_NOT_VALID'				=> '%s is not a valid migration.',
 	'MIGRATION_SCHEMA_DONE'				=> 'インストールされたスキーマ: %1$s; 処理時間: %2$.2f 秒',
 	'MIGRATION_SCHEMA_IN_PROGRESS'		=> 'スキーマをインストール中: %1$s; 処理時間: %2$.2f 秒',  
 	'MIGRATION_SCHEMA_RUNNING'			=> 'インストールされたスキーマ: %s.',
+
+	'MIGRATION_REVERT_DATA_DONE'		=> 'Reverted Data: %1$s; Time: %2$.2f seconds',
+	'MIGRATION_REVERT_DATA_IN_PROGRESS'	=> 'Reverting Data: %1$s; Time: %2$.2f seconds',
+	'MIGRATION_REVERT_DATA_RUNNING'		=> 'Reverting Data: %s.',
+	'MIGRATION_REVERT_SCHEMA_DONE'		=> 'Reverted Schema: %1$s; Time: %2$.2f seconds',
+	'MIGRATION_REVERT_SCHEMA_IN_PROGRESS'	=> 'Reverting Schema: %1$s; Time: %2$.2f seconds',
+	'MIGRATION_REVERT_SCHEMA_RUNNING'	=> 'Reverting Schema: %s.',
 
 	'MIGRATION_INVALID_DATA_MISSING_CONDITION'		=> 'A migration is invalid. An if statement helper is missing a condition.',
 	'MIGRATION_INVALID_DATA_MISSING_STEP'			=> 'A migration is invalid. An if statement helper is missing a valid call to a migration step.',
