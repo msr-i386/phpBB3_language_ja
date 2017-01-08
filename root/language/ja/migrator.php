@@ -50,6 +50,7 @@ $lang = array_merge($lang, array(
 	'MIGRATION_NOT_FULFILLABLE'			=> 'The migration "%1$s" is not fulfillable, missing migration "%2$s".',
 	'MIGRATION_NOT_VALID'				=> '%s is not a valid migration.',
 	'MIGRATION_SCHEMA_DONE'				=> 'インストールされたスキーマ: %1$s; 処理時間: %2$.2f 秒',
+	'MIGRATION_SCHEMA_IN_PROGRESS'		=> 'スキーマをインストール中: %1$s; 処理時間: %2$.2f 秒',  
 	'MIGRATION_SCHEMA_RUNNING'			=> 'インストールされたスキーマ: %s.',
 
 	'MIGRATION_INVALID_DATA_MISSING_CONDITION'		=> 'A migration is invalid. An if statement helper is missing a condition.',
@@ -60,9 +61,12 @@ $lang = array_merge($lang, array(
 	'MIGRATION_INVALID_DATA_UNDEFINED_METHOD'		=> 'A migration is invalid. An undefined migration tool method was encountered.',
 
 	'MODULE_ERROR'						=> 'モジュール構成中にエラーが発生しました: %s',
+	'MODULE_EXISTS'						=> 'モジュールは既に存在します: %s',
+	'MODULE_EXIST_MULTIPLE'				=> '指定された親モジュールの言語名を持ついくつかのモジュールが既に存在します: %s. 前後のキーを使用して、モジュールの配置を明確にしてください。',
 	'MODULE_INFO_FILE_NOT_EXIST'		=> 'モジュール情報ファイルがありません: %2$s',
 	'MODULE_NOT_EXIST'					=> 'モジュールがありません: %s',
 
+	'PARENT_MODULE_FIND_ERROR'			=> '親モジュールの識別子を特定できません: %s',
 	'PERMISSION_NOT_EXIST'				=> 'The permission setting "%s" unexpectedly does not exist.',
 
 	'ROLE_NOT_EXIST'					=> 'The permission role "%s" unexpectedly does not exist.',

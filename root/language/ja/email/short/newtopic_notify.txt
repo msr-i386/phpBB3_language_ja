@@ -4,7 +4,7 @@ Subject: 新着トピックの通知 - フォーラム "{FORUM_NAME}"
 
 フォーラムサイト "{SITENAME}" に於いて
 フォーラム "{FORUM_NAME}" に
-新しいトピック "{TOPIC_TITLE}"<!-- IF AUTHOR_NAME !== '' --> by {AUTHOR_NAME}<!-- ENDIF --> が投稿されました。
+新しいトピック "{TOPIC_TITLE}"<!-- IF AUTHOR_NAME != '' --> by {AUTHOR_NAME}<!-- ENDIF --> が投稿されました。
 
 これはあなたが最後にフォーラムに訪れた日時より後に投稿されたものです。
 下記リンク先から新着トピックをご確認いただけます。

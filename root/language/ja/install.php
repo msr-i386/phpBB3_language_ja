@@ -301,10 +301,10 @@ $lang = array_merge($lang, array(
 	'PHP_REGISTER_GLOBALS_EXPLAIN'	=> 'この設定オプションが有効に設定されていても phpBB3 は動作するでしょう。しかしセキュリティ上の理由で、もし可能であるなら register_globals を無効にしておくことを強く勧めます。もし “いいえ” と診断された場合、phpBB3ルートディレクトリ直下 のファイル .htaccess に下記コードを追加することで解決することがあります。<br /><samp>--- コード ---<br />php_flag register_globals off<br />-------------</samp>',
 	'PHP_SAFE_MODE'					=> 'セーフモード',
 	'PHP_SETTINGS'					=> 'PHP のバージョンと設定',
-	'PHP_SETTINGS_EXPLAIN'			=> '<strong>必須</strong> - phpBB3 を使用するにはサーバにインストールされている PHP のバージョンが 5.3.3 以上である必要があります。もし下に "<var>セーフモード</var>" と表示されている場合、PHP のセーフモードが有効であることを示します。セーフモードが有効な場合、リモート操作に制限が課せられます。',
+	'PHP_SETTINGS_EXPLAIN'			=> '<strong>必須</strong> - phpBB3 を使用するにはサーバにインストールされている PHP のバージョンが 5.3.3 以上 (PHP 7 は非対応) である必要があります。もし下に "<var>セーフモード</var>" と表示されている場合、PHP のセーフモードが有効であることを示します。セーフモードが有効な場合、リモート操作に制限が課せられます。',
 	'PHP_URL_FOPEN_SUPPORT'			=> 'PHP設定オプション <var>allow_url_fopen</var> が有効です',
 	'PHP_URL_FOPEN_SUPPORT_EXPLAIN'	=> '<strong>オプション</strong> - この設定オプションが無効に設定されていても phpBB3 は動作するでしょう。しかし他サイトのアバター表示などがきちんと動作しなくなります。',
-	'PHP_VERSION_REQD'				=> 'PHPバージョン 5.3.3 以上',
+	'PHP_VERSION_REQD'				=> 'PHPバージョン 5.3.3 以上かつ 7.0 未満',
 	'POST_ID'						=> '投稿記事ID',
 	'PREFIX_FOUND'					=> '指定されたデータベースのテーブルをスキャンしたところ、テーブル接頭辞として <strong>%s</strong> が使われています',
 	'PREPROCESS_STEP'				=> 'コンバートプリプロセス 関数/クエリ の遂行',
@@ -400,6 +400,7 @@ $lang = array_merge($lang, array(
 	'DATABASE_UPDATE_CONTINUE'			=> 'データベースのアップデートを続ける',
 	'DATABASE_UPDATE_INFO_OLD'			=> 'installディレクトリ内 のデータベースアップデートファイルのバージョンが最新ではありません。アップロードしたファイルのバージョンが最新かどうかご確認ください。',
 	'DATABASE_UPDATE_NOT_COMPLETED'		=> 'データベースのアップデートはまだ完了していません',
+	'DATABASE_VERSION'					=> 'データベースのバージョン',  
 	'DELETE_USER_REMOVE'				=> 'ユーザーのアカウントと投稿記事の削除',
 	'DELETE_USER_RETAIN'				=> 'ユーザーアカウントの削除（投稿記事は保持）',
 	'DESTINATION'						=> 'アップロード位置',
@@ -439,6 +440,7 @@ $lang = array_merge($lang, array(
 	'FILES_NOT_MODIFIED_EXPLAIN'	=> '以下のファイルは純正ファイルです。ハックは一切されていません。',
 	'FILES_UP_TO_DATE'				=> 'アップデート済みファイル',
 	'FILES_UP_TO_DATE_EXPLAIN'		=> '以下のファイルは既にアップデートが完了しているため、アップロードする必要はありません。',
+	'FILES_VERSION'					=> 'ファイルバージョン',  
 	'FTP_SETTINGS'					=> 'FTP設定',
 	'FTP_UPDATE_METHOD'				=> 'FTPアップロード',
 
@@ -486,6 +488,7 @@ $lang = array_merge($lang, array(
 	'OLD_UPDATE_FILES'		=> 'アップデートファイルが最新ではありません。このアップデートファイルは phpBB %1$s から phpBB %2$s へアップデートを行います。一方、現在の phpBB3 の最新バージョンは %3$s です。',
 
 	'PACKAGE_UPDATES_TO'				=> 'このパッケージによるアップデート後のバージョン',
+	'PACKAGE_VERSION'					=> 'インストールされているパッケージのバージョン',  
 	'PERFORM_DATABASE_UPDATE'			=> 'データベースアップデート',
 	'PERFORM_DATABASE_UPDATE_EXPLAIN'	=> '下のボタンをクリックするとデータベースアップデートが開始されます。データベースのアップデートにはしばらく時間がかかります。アップデートが完了するまで決してページ移動しないでください。アップデートの完了後、次のアップデートプロセスへ移行してください。',
 	'PREVIOUS_VERSION'					=> 'アップデート前のバージョン',
@@ -530,6 +533,12 @@ $lang = array_merge($lang, array(
 	'UPDATE_DATABASE_SCHEMA'		=> 'データベーススキーマを更新中',
 	'UPDATE_FILES'					=> 'ファイルアップデート',
 	'UPDATE_FILES_NOTICE'			=> 'ファイルのアップデートを忘れないでください。このスクリプトはデータベースのアップデートのみを実行しました。',
+	'UPDATE_INCOMPLETE'				=> 'phpBB のインストールは正常にアップデートできませんでした',
+	'UPDATE_INCOMPLETE_MORE'		=> 'このエラーを修復するには、以下の情報をご覧ください。',
+	'UPDATE_INCOMPLETE_EXPLAIN'		=> '<h1>未完了のアップデート</h1>
+
+		<p>前回の phpBB のアップデートが完了していないことが判明しました。<a href="%1$s" title="%1$s">データベース更新スクリプト</a>をクリックして実行してください。もしそれが存在しない場合は、<a href="https://www.phpbb.com/downloads/" title="phpBB downloads">パッケージバージョンをダウンロード</a>して、"install" フォルダーを phpBB のルートディレクトリ (config.php ファイルがある場所) にアップロードして、<a href="%1$s" title="%1$s">データベース更新スクリプトを実行してください</a>。</p>',
+
 	'UPDATE_INSTALLATION'			=> 'phpBB3 のアップデート',
 	'UPDATE_INSTALLATION_EXPLAIN'	=> 'ここでは phpBB3 のアップデートを行うことができます。<br />アップデートプロセスの中には phpBB3 の各ファイルについてアップデートすべきファイルかどうかをチェックするものもあります。アップデートを実行する前にこれらアップデートされるファイルの差分コードを確認できます。<br /><br />ファイルアップデートは２つの方法から選択できます。</p><h2>手動アップデート</h2><p>このアップデート方法では、MOD などでハックされているファイルについて、ハック部分を損なうことなくアップデート差分を追加したファイルを作成し、そのパッケージをダウンロードすることが可能です。このパッケージをダウンロード後、パッケージ内ファイルを phpBB3 ディレクトリ下の正しい位置にアップロードしてください。アップロードが完了したら “ファイル再チェック” を実行して正しい位置にファイルがアップロードされたかどうかを確認してください。</p><h2>FTP による自動アップデート</h2><p>このアップデート方法ではアップデートは自動で行われます。この方法を使用するには FTPサーバ へのログイン情報が必要です。自動アップデートが完了するとファイル再チェックが自動的に始まり、ファイルがきちんとアップデートされたかどうかを確認できます。<br /><br />',
 	'UPDATE_INSTRUCTIONS'			=> '

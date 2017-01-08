@@ -4,7 +4,7 @@ Subject: 新着記事の通知 - フォーラム "{FORUM_NAME}"
 
 フォーラムサイト "{SITENAME}" に於いて
 フォーラム "{FORUM_NAME}" の
-トピック "{TOPIC_TITLE}" <!-- IF AUTHOR_NAME !== '' --> by {AUTHOR_NAME}<!-- ENDIF -->
+トピック "{TOPIC_TITLE}" <!-- IF AUTHOR_NAME != '' --> by {AUTHOR_NAME}<!-- ENDIF -->
 に返信記事が投稿されました。
 
 これはあなたが最後にフォーラムに訪れた日時より後に返信されたものです。

@@ -90,7 +90,10 @@ $lang = array_merge($lang, array(
 	'DELETE_PERMANENTLY'		=> '永久的に削除する',
 	'DELETE_POST_CONFIRM'		=> 'この記事を本当に削除してもよろしいですか？',
 	'DELETE_POST_PERMANENTLY_CONFIRM'	=> 'この記事を<strong>永久的に</strong>削除してもよろしいですか？',
-	'DELETE_POST_PERMANENTLY'	=> '永久的に削除された記事を復元することはできません',
+	'DELETE_POST_PERMANENTLY'	=> array(
+		1	=> '永久的に削除されたこの記事を復元することはできません',
+		2	=> '永久的に削除された %1$d 記事を復元することはできません',
+	),
 	'DELETE_POSTS_CONFIRM'		=> 'これらの記事を本当に削除してもよろしいですか？',
 	'DELETE_POSTS_PERMANENTLY_CONFIRM'	=> 'これらの記事を<strong>永久的に</strong>削除してもよろしいですか？',
 	'DELETE_REASON'				=> '削除の理由',
@@ -98,6 +101,10 @@ $lang = array_merge($lang, array(
 	'DELETE_POST_WARN'			=> 'この記事を削除する',
 	'DELETE_TOPIC_CONFIRM'		=> 'このトピックを本当に削除してもよろしいですか？',
 	'DELETE_TOPIC_PERMANENTLY'	=> '永久的に削除された記事を復元することはできません',
+	'DELETE_TOPIC_PERMANENTLY'	=> array(
+		1	=> '永久的に削除されたこの記事を復元することはできません',
+		2	=> '永久的に削除された %1$d 記事を復元することはできません',
+	),
 	'DELETE_TOPIC_PERMANENTLY_CONFIRM'	=> 'このトピックを<strong>永久的に</strong>削除してもよろしいですか？',
 	'DELETE_TOPICS_CONFIRM'		=> 'これらのトピックを本当に削除してもよろしいですか？',
 	'DELETE_TOPICS_PERMANENTLY_CONFIRM'	=> 'これらのトピックを<strong>永久的に</strong>削除してもよろしいですか？',

@@ -3,7 +3,7 @@ Subject: 新着記事の通知 - トピック "{TOPIC_TITLE}"
 {USERNAME} さん
 
 フォーラムサイト "{SITENAME}" に於いて
-トピック "{TOPIC_TITLE}"<!-- IF AUTHOR_NAME !== '' --> by {AUTHOR_NAME}<!-- ENDIF --> に返信記事が投稿されました。
+トピック "{TOPIC_TITLE}"<!-- IF AUTHOR_NAME != '' --> by {AUTHOR_NAME}<!-- ENDIF --> に返信記事が投稿されました。
 
 これはあなたが最後にトピックに訪れた日時より後に返信されたものです。
 トピックに訪れるまでトピックに新しい返信記事が投稿されても通知される事はありません。

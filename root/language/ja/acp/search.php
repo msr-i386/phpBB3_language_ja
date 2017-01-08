@@ -54,7 +54,7 @@ $lang = array_merge($lang, array(
 	'DELETING_INDEX_IN_PROGRESS_EXPLAIN'	=> '検索バックエンドは現在、インデクスを削除中です。処理が終わるには数分かかる事もあります。',
 
 	'FULLTEXT_MYSQL_INCOMPATIBLE_DATABASE'	=> 'Fulltext mysql は MySQL4 以上で使用できます',
-	'FULLTEXT_MYSQL_NOT_SUPPORTED'			=> 'Fulltext mysql を使用するにはデータベースのテーブルフォーマットが MyISAM または InnoDB である必要があります。InnoDB の場合、MySQL のバージョンは 5.6.4 以上である必要があります。',
+	'FULLTEXT_MYSQL_NOT_SUPPORTED'			=> 'Fulltext mysql を使用するにはデータベースのテーブルフォーマットが MyISAM または InnoDB である必要があります。InnoDB の場合、MySQL のバージョンは 5.6.8 以上である必要があります。',
 	'FULLTEXT_MYSQL_TOTAL_POSTS'			=> 'インデクス済み記事数',
 	'FULLTEXT_MYSQL_MIN_SEARCH_CHARS_EXPLAIN'	=> 'この数より小さい字数のキーワードはインデクスの対象となりません。	この設定を変更するには MySQL のコンフィグ設定を変更する必要があります。',
 	'FULLTEXT_MYSQL_MAX_SEARCH_CHARS_EXPLAIN'	=> 'この数を超える字数のキーワードはインデクスの対象となりません。この設定を変更するには MySQL のコンフィグ設定を変更する必要があります。',

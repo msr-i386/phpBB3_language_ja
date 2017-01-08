@@ -570,6 +570,7 @@ $lang = array_merge($lang, array(
 	'SMTP_PORT'						=> 'SMTPサーバポート番号',
 	'SMTP_PORT_EXPLAIN'				=> 'SMTPサーバポート番号 が通常（25番ポート）と異なっている場合のみ変更してください',
 	'SMTP_SERVER'					=> 'SMTPサーバ アドレス',
+	'SMTP_SERVER_EXPLAIN'			=> 'SMTPサーバ が使用するプロトコルを入力する必要があることに注意してください。SSL を使用している場合、"ssl://your.mailserver.com" のように設定しなければなりません',
 	'SMTP_SETTINGS'					=> 'SMTP設定',
 	'SMTP_USERNAME'					=> 'SMTPユーザー名',
 	'SMTP_USERNAME_EXPLAIN'			=> 'SMTPサーバ が要求する場合のみご入力ください',
