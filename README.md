@@ -1,9 +1,9 @@
 phpBB3_language_ja
 ==================
 
-A language pack of Japanese for phpBB 3.2.0
+A language pack of Japanese for phpBB 3.2.1
 
-phpBB 3.2.0 の日本語言語パックです
+phpBB 3.2.1 の日本語言語パックです
 
 
 注意
