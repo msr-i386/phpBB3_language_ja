@@ -83,7 +83,7 @@ $lang = array_merge($lang, array(
 	'ACP_LINK'	=> 'Take me to <a href="%1$s">the ACP</a>',
 
 	'INSTALL_PHPBB_INSTALLED'		=> 'phpBB は既にインストールされています。',
-	'INSTALL_PHPBB_NOT_INSTALLED'	=> 'phpBB はインストールされていません。'
+	'INSTALL_PHPBB_NOT_INSTALLED'	=> 'phpBB はインストールされていません。',
 ));
 
 // Requirements translation
@@ -119,7 +119,7 @@ $lang = array_merge($lang, array(
 
 	'RETEST_REQUIREMENTS'	=> '必須条件を再テストする',
 
-	'STAGE_REQUIREMENTS'	=> '必須条件をチェックする'
+	'STAGE_REQUIREMENTS'	=> '必須条件をチェックする',
 ));
 
 // General error messages
@@ -199,6 +199,7 @@ $lang = array_merge($lang, array(
 	'INST_ERR_DB_NO_NAME'			=> 'データベースの名前が入力されていません',
 	'INST_ERR_DB_FORUM_PATH'		=> 'データベースファイルへのパスが掲示板ディレクトリツリー内に指定されています。セキュリティ上の理由から、データベースファイルをインターネットからアクセスできない場所に格納すべきです。',
 	'INST_ERR_DB_CONNECT'			=> 'データベースに接続できませんでした。下のエラーメッセージをご確認ください。',
+	'INST_ERR_DB_NO_WRITABLE'		=> 'Both the database and the directory containing it must be writable.',
 	'INST_ERR_DB_NO_ERROR'			=> 'このエラーに対するメッセージは用意されていません',
 	'INST_ERR_PREFIX'				=> '入力した テーブル接頭辞 を持つテーブルが既にデータベース内に存在します。接頭辞を変更してください。',
 	'INST_ERR_DB_NO_MYSQLI'			=> 'サーバにインストールされている MySQL のバージョンでは “MySQL with MySQLi Extension” をご利用になれません。かわりにオプション “MySQL” を選択してください。',
@@ -224,6 +225,7 @@ $lang = array_merge($lang, array(
 	// Server data
 	//
 	// Form labels
+	'UPGRADE_INSTRUCTIONS'			=> '新しい機能 <strong>%1$s</strong> が使用可能です。<a href="%2$s" title="%2$s"><strong>リリースノート</strong></a>から、新機能の内容とアップグレード方法を確認してください。',
 	'SERVER_CONFIG'				=> 'サーバー設定',
 	'SCRIPT_PATH'				=> 'スクリプトパス',
 	'SCRIPT_PATH_EXPLAIN'		=> 'phpBBルートディレクトリ へのパスです。ドメインから見た相対パスで指定する必要があります。例: <samp>/phpBB3</samp>',
@@ -299,6 +301,7 @@ $lang = array_merge($lang, array(
 	'TASK_ADD_BOTS'			=> 'ボットの登録',
 	'TASK_ADD_LANGUAGES'	=> '利用可能な言語のインストール',
 	'TASK_ADD_MODULES'		=> 'モジュールのインストール',
+	'TASK_CREATE_SEARCH_INDEX'	=> '検索インデックスの作成',
 
 	// Install finish tasks
 	'TASK_INSTALL_EXTENSIONS'	=> '拡張機能のインストール',

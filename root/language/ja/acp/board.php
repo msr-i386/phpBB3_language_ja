@@ -133,7 +133,7 @@ $lang = array_merge($lang, array(
 
 	'ALLOW_BBCODE_PM'			=> 'BBCode を許可する',
 	'ALLOW_FLASH_PM'			=> '<code>[FLASH]</code> BBCode を許可する',
- 	'ALLOW_FLASH_PM_EXPLAIN'	=> 'プライベートメッセージでの Flash の使用はパーミッションにも依存する点にご注意ください',
+	'ALLOW_FLASH_PM_EXPLAIN'	=> 'プライベートメッセージでの Flash の使用はパーミッションにも依存する点にご注意ください',
 	'ALLOW_FORWARD_PM'			=> '転送を許可する',
 	'ALLOW_IMG_PM'				=> '<code>[IMG]</code> BBCode を許可する',
 	'ALLOW_MASS_PM'				=> '複数のユーザーまたはグループへの送信を許可する',
@@ -161,8 +161,10 @@ $lang = array_merge($lang, array(
 	'ACP_POST_SETTINGS_EXPLAIN'			=> 'ここでは投稿に関する設定を行う事ができます',
 	'ALLOW_POST_LINKS'					=> '記事/プライベートメッセージ でリンクを許可する',
 	'ALLOW_POST_LINKS_EXPLAIN'			=> '許可しなかった場合、<code>[URL]</code> BBCode とマジックリンク（URLの自動リンク化）は無効化されます',
- 	'ALLOW_POST_FLASH'					=> '記事で <code>[FLASH]</code> BBCode を許可する',
- 	'ALLOW_POST_FLASH_EXPLAIN'			=> '許可しなかった場合、<code>[FLASH]</code> BBCode を記事で使用できません。許可した場合、どのユーザーが <code>[FLASH]</code> BBCode を使用できるかはパーミッションに依存します。',
+	'ALLOWED_SCHEMES_LINKS'				=> 'リンク内で使用可能なスキーム',
+	'ALLOWED_SCHEMES_LINKS_EXPLAIN'		=> '許可するスキームをカンマ区切り形式で記述します。スキームのないURL、またはこのリストにあるスキームのみ許可します。',
+	'ALLOW_POST_FLASH'					=> '記事で <code>[FLASH]</code> BBCode を許可する',
+	'ALLOW_POST_FLASH_EXPLAIN'			=> '許可しなかった場合、<code>[FLASH]</code> BBCode を記事で使用できません。許可した場合、どのユーザーが <code>[FLASH]</code> BBCode を使用できるかはパーミッションに依存します。',
 
 	'BUMP_INTERVAL'					=> 'トピックの上げ期間',
 	'BUMP_INTERVAL_EXPLAIN'			=> '記事投稿後、この期間が経過するまで "このトピックを上げる"リンク は表示されません。0 に設定するとトピックの上げ機能は無効化されます。',
@@ -346,13 +348,16 @@ $lang = array_merge($lang, array(
 
 // Cookie Settings
 $lang = array_merge($lang, array(
-	'ACP_COOKIE_SETTINGS_EXPLAIN'	=> 'ここでは Cookie の設定を行うことができます。多くの場合、デフォルト設定のままで十分です。デフォルト設定を変更する場合は十分注意して行ってください。間違った設定をしてしまうと登録ユーザーがログインできなくなります。',
+	'ACP_COOKIE_SETTINGS_EXPLAIN'	=> 'ここでは Cookie の設定を行うことができます。多くの場合、デフォルト設定のままで十分です。デフォルト設定を変更する場合は十分注意して行ってください。間違った設定をしてしまうと登録ユーザーがログインできなくなります。ログアウトできないユーザーが存在する場合は、<b><a href="https://www.phpbb.com/support/go/cookie-settings/">phpBB.com Knowledge Base - Fixing incorrect cookie settings</a></b>を参照してください。',
 
 	'COOKIE_DOMAIN'				=> 'Cookieドメイン',
+	'COOKIE_DOMAIN_EXPLAIN'		=> '多くの場合、Cookieドメインは必須ではありません。よくわからない場合は空のままにしてください。<br /><br /> 他のソフトウェアと統合したり、複数のドメインが存在する場合、Cookieドメインを指定する必要があります。たとえば、<i>example.com</i> と <i>forums.example.com</i> もしくは <i>forums.example.com</i> と <i>blog.example.com</i>を使用しているとすると、<i>example.com</i> のように共通のドメイン名になるまでサブドメインを消去します。そして、.example.com のように共通ドメインの先頭にドット(.)を追加します。',
 	'COOKIE_NAME'				=> 'Cookie名',
+	'COOKIE_NAME_EXPLAIN'		=> 'これはどのような名前であってもかまいません。Cookieの設定を変更するときはCookie名を変更するべきです。',
 	'COOKIE_NOTICE'				=> 'Cookie の通知',
 	'COOKIE_NOTICE_EXPLAIN'		=> 'Cookie の通知を有効にすると、掲示板にアクセスしたユーザーに表示されるようになります。これは、掲示板の内容や有効な拡張機能によって法律で必要となる場合があります。',
 	'COOKIE_PATH'				=> 'Cookieパス',
+	'COOKIE_PATH_EXPLAIN'		=> '常にスラッシュであることに注意してください。掲示板のURLは無関係です。',
 	'COOKIE_SECURE'				=> 'Cookieセキュア',
 	'COOKIE_SECURE_EXPLAIN'		=> 'もしサーバが SSL経由 で動作している場合は有効にしてください。そうでない場合は無効のままにしてください。もし SSL経由 でないサーバ上で有効に設定してしまった場合、リダイレクト中にサーバエラーが発生するでしょう。',
 	'ONLINE_LENGTH'				=> 'オンラインデータの有効期限',
@@ -392,7 +397,9 @@ $lang = array_merge($lang, array(
 	'LOAD_CPF_VIEWPROFILE'			=> 'プロフィールページでカスタムプロフィールフィールドを表示する',
 	'LOAD_CPF_VIEWTOPIC'			=> 'トピックページでカスタムプロフィールフィールドを表示する',
 	'LOAD_USER_ACTIVITY'			=> 'ユーザーの投稿割合データを表示する',
-	'LOAD_USER_ACTIVITY_EXPLAIN'	=> '最も多く投稿した トピック/フォーラム に対するユーザーの投稿割合データをプロフィールページとユーザーコントロールパネルで表示します。記事が１００万件を超える場合はこの機能を無効にしておく事を勧めます。',
+	'LOAD_USER_ACTIVITY_EXPLAIN'	=> '最も多く投稿した トピック/フォーラム に対するユーザーの投稿割合データをプロフィールページとユーザーコントロールパネルで表示します。記事が100万件を超える場合はこの機能を無効にしておく事を勧めます。',
+	'LOAD_USER_ACTIVITY_LIMIT'		=> 'ユーザーの投稿割合データの表示を制限する',
+	'LOAD_USER_ACTIVITY_LIMIT_EXPLAIN'	=> 'この投稿数よりも多いユーザーは、アクティブなトピック/フォーラムを表示しないようにします。0に設定することで無制限にできます。',
 	'READ_NOTIFICATION_EXPIRE_DAYS'	=> '通知の有効期間',
 	'READ_NOTIFICATION_EXPIRE_DAYS_EXPLAIN' => 'この日数が過ぎると通知が自動的に消えます。古い通知がユーザーに通知されなくなります。通知を自動的に消したくない場合は 0 をご入力ください。',
 	'RECOMPILE_STYLES'				=> 'テンプレートファイルの再コンパイル',
@@ -440,8 +447,8 @@ $lang = array_merge($lang, array(
 	'LDAP_NO_IDENTITY'				=> '%s についての ログインID が見つかりません',
 	'LDAP_PASSWORD'					=> 'LDAPパスワード',
 	'LDAP_PASSWORD_EXPLAIN'			=> '匿名で接続する場合は空白にしてください。匿名で接続しない場合は上記ユーザーのパスワードをご入力ください。ActiveDirectoryサーバ では必須です。<br /><em><strong>注意:</strong> このパスワードは暗号化されずにデータベースに保管されます。データベースにアクセスできる人物またはこのページにアクセスできるユーザーもこのパスワードを閲覧できる点にご注意ください。</em>',
- 	'LDAP_PORT'						=> 'LDAPサーバポート番号',
- 	'LDAP_PORT_EXPLAIN'				=> 'お望みであれば LDAPサーバ へ接続するためのポート番号を指定できます。デフォルトポート番号 389 と異なるポート番号を使用している場合のみご入力ください。',
+	'LDAP_PORT'						=> 'LDAPサーバポート番号',
+	'LDAP_PORT_EXPLAIN'				=> 'お望みであれば LDAPサーバ へ接続するためのポート番号を指定できます。デフォルトポート番号 389 と異なるポート番号を使用している場合のみご入力ください。',
 	'LDAP_SERVER'					=> 'LDAPサーバ名',
 	'LDAP_SERVER_EXPLAIN'			=> 'もし LDAP を使用する場合、LDAPサーバ の IPアドレス かホスト名をご入力ください。あるいは ldap://hostname:port/ のように URL をご入力ください。',
 	'LDAP_UID'						=> 'LDAP <var>uid</var>',
@@ -565,6 +572,8 @@ $lang = array_merge($lang, array(
 	'ENABLE_EMAIL_EXPLAIN'			=> '無効に設定した場合、掲示板がメールを送信することはありません。<em>“ユーザー登録の設定”ページ における “アカウントの有効化”設定オプション で選択肢 “ユーザー” または “Admin” を出現させるにはこの機能を有効にしておく必要があります。もしそこで "ユーザー" または "Admin" を選択していて且つこのメール送信機能を無効にした場合、ユーザー登録は停止されます。</em>',
 	'SEND_TEST_EMAIL'				=> 'テストメールを送信',
 	'SEND_TEST_EMAIL_EXPLAIN'		=> 'アカウントに定義されたメールアドレスにテストメールを送信します。',
+	'SMTP_ALLOW_SELF_SIGNED'		=> 'SSL証明書の自己署名を許可する',
+	'SMTP_ALLOW_SELF_SIGNED_EXPLAIN'=> '自己署名されたSSL証明書を持ったSMTPサーバーへの接続を許可します。<em><strong>注意:</strong> 自己署名SSL証明書を許可すると、セキュリティ上の問題を引き起こす可能性があります。</em>',
 	'SMTP_AUTH_METHOD'				=> 'SMTP認証方式',
 	'SMTP_AUTH_METHOD_EXPLAIN'		=> '“SMTPユーザー名”オプション と “SMTPパスワード”オプション が設定された場合のみ使用されます。認証方式が判らない場合、プロバイダにどの認証方式を使用しているか問い合わせてください。',
 	'SMTP_CRAM_MD5'					=> 'CRAM-MD5',
@@ -581,7 +590,12 @@ $lang = array_merge($lang, array(
 	'SMTP_SETTINGS'					=> 'SMTP設定',
 	'SMTP_USERNAME'					=> 'SMTPユーザー名',
 	'SMTP_USERNAME_EXPLAIN'			=> 'SMTPサーバ が要求する場合のみご入力ください',
+	'SMTP_VERIFY_PEER'				=> 'SSL証明書を検証する',
+	'SMTP_VERIFY_PEER_EXPLAIN'		=> 'SMTPサーバが使用するSSL証明書の検証を行います。<em><strong>注意:</strong> 未検証のSSL証明書を使用した接続はセキュリティ上の問題を引き起こす可能性があります。</em>',
+	'SMTP_VERIFY_PEER_NAME'			=> 'SMTPピア名を検証する',
+	'SMTP_VERIFY_PEER_NAME_EXPLAIN'	=> 'SSL / TLS接続時にSMTPサーバのピア名の検証を行います。<em><strong>注意:</strong> 未検証の接続先へ接続すると、セキュリティ上の問題を引き起こす可能性があります。</em>',
 	'TEST_EMAIL_SENT'				=> 'テストメールの送信が完了しました。<br />受信できない場合は、メールアドレスが正しいことを確認してください。<br /><br />ヘルプが必要な場合は、<a href="https://www.phpbb.com/community/">phpBB サポートフォーラム</a>にアクセスしてください。',
+
 	'USE_SMTP'						=> 'SMTPサーバ の使用',
 	'USE_SMTP_EXPLAIN'				=> 'PHP のメール関数を使うかわりに SMTPサーバ を使いたい場合、 “はい” を選択してください',
 ));
@@ -590,6 +604,8 @@ $lang = array_merge($lang, array(
 $lang = array_merge($lang, array(
 	'ACP_JABBER_SETTINGS_EXPLAIN'	=> 'ここでは Jabber の設定を行うことができます。掲示板から登録ユーザーへ Jabber経由 でメッセージを通知できます。Jabber を利用する登録ユーザーが多い場合は利用すると良いでしょう。Jabber はオープンソースプロトコル XMPP を採用したメッセージングサーバであり、誰でも利用できます。Jabberサーバ のいくつかは MSN Messenger, Yahoo! Insant Messenger, IRC, ICQ などのインスタントメッセンジャのネットワークへ接続可能なゲートウェイを持っており、これらのネットワークへメッセージを送ることができます。全ての Jabberサーバ が全てのプロトコルに対応しているわけではなく、そのためプロトコルの違いによってデータの転送に失敗する事もありえます。入力されたデータがすでに登録済みのアカウントデータである事を確認してください - phpBB はここで入力されたデータを基に Jabberサーバ へ接続します。',
 
+	'JAB_ALLOW_SELF_SIGNED'			=> 'SSL証明書の自己署名を許可する',
+	'JAB_ALLOW_SELF_SIGNED_EXPLAIN'	=> '自己署名されたSSL証明書をJabberサーバへ接続することを許可します。<em><strong>注意:</strong> 自己署名SSL証明書を許可すると、セキュリティ上の問題を引き起こす可能性があります。</em>',
 	'JAB_ENABLE'				=> 'Jabber を有効にする',
 	'JAB_ENABLE_EXPLAIN'		=> 'Jabber によるメッセージと通知を有効にする',
 	'JAB_GTALK_NOTE'			=> '<samp>dns_get_record</samp> 関数が見つからないため、GTalk を使用できない点にご注意ください。 この関数を PHP4 で利用することはできませんし、Windowsプラットフォーム で実装されてもいません。さらに MacOS を含む現在の BSDベースシステム 上でも機能しません。',
@@ -606,4 +622,8 @@ $lang = array_merge($lang, array(
 	'JAB_USE_SSL_EXPLAIN'		=> '“はい” に設定した場合、セキュアサーバ接続の確立が試みられます。Jabberポート番号 を 5222 に指定している場合、5223 が使用されます。',
 	'JAB_USERNAME'				=> 'Jabberユーザー名 または JID',
 	'JAB_USERNAME_EXPLAIN'		=> 'Jabber登録済みユーザー名 または有効な JID を正確にご入力ください。ユーザー名が有効かどうかはチェックされません。有効な JID の例：user@jabber.org',
+	'JAB_VERIFY_PEER'				=> 'SSL証明書を検証する',
+	'JAB_VERIFY_PEER_EXPLAIN'		=> 'Jabberサーバが使用するSSL証明書の検証を行います。<em><strong>注意:</strong> 未検証のSSL証明書を使用した接続はセキュリティ上の問題を引き起こす可能性があります。</em>',
+	'JAB_VERIFY_PEER_NAME'			=> 'Jabberのピア名を検証する',
+	'JAB_VERIFY_PEER_NAME_EXPLAIN'	=> 'SSL / TLS接続時にJabberサーバのピア名の検証を行います。<em><strong>注意:</strong> 未検証の接続先へ接続すると、セキュリティ上の問題を引き起こす可能性があります。</em>',
 ));

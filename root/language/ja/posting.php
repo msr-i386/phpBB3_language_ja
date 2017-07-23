@@ -243,8 +243,8 @@ $lang = array_merge($lang, array(
 	'SMILIES_ARE_OFF'			=> 'スマイリー: <em>OFF</em>',
 	'SMILIES_ARE_ON'			=> 'スマイリー: <em>ON</em>',
 	'STICKY_ANNOUNCE_TIME_LIMIT'=> 'この期間が過ぎるとトピックは通常トピックに自動的に変更されます',
-	'STICK_TOPIC_FOR'			=> '注目/告知 の有効期間',
-	'STICK_TOPIC_FOR_EXPLAIN'	=> '0 にすると 注目/告知 トピックが通常トピックに自動的に変更されることはありません',
+	'STICK_TOPIC_FOR'			=> '注目/告知/全体告知 の有効期間',
+	'STICK_TOPIC_FOR_EXPLAIN'	=> '0 にすると 注目/告知/全体告知 トピックが通常トピックに自動的に変更されることはありません',
 	'STYLES_TIP'				=> 'Tip: テキストを選択した状態で BBCodeボタン をクリックすると選択部分がタグで囲まれます',
 
 	'TOO_FEW_CHARS'				=> 'メッセージが短すぎます',

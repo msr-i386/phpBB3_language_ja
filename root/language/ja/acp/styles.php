@@ -81,6 +81,7 @@ $lang = array_merge($lang, array(
 	'STYLE_UNINSTALL_DEPENDENT'	=> 'スタイル "%s" をアンインストールする事はできません。このスタイルを継承している子スタイルが存在しています。',
 	'STYLE_UNINSTALLED'			=> 'スタイル "%s" のアンインストールに成功しました',
 	'STYLE_USED_BY'				=> '使用ユーザー数（ボット含む）',
+	'STYLE_VERSION'				=> 'Style バージョン',
 
 	'UNINSTALL_DEFAULT'		=> 'デフォルトスタイルをアンインストールする事はできません',
 
