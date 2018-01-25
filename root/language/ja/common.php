@@ -48,7 +48,7 @@ $lang = array_merge($lang, array(
 	'USER_LANG'			=> 'ja',
 
 	// You can define different rules for the determination of plural forms here.
-	// See http://wiki.phpbb.com/Plural_Rules for more information
+	// See https://area51.phpbb.com/docs/dev/32x/language/plurals.html for more information
 	// or ask the translation manager for help.
 	'PLURAL_RULE'		=> 0,
 
@@ -556,6 +556,7 @@ $lang = array_merge($lang, array(
 	),
 	'OPTIONS'					=> 'オプション',
 
+	'PAGE_NOT_FOUND'		=> 'リクエストされたページが見つかりませんでした。',
 	'PAGE_OF'				=> 'ページ <strong>%1$d</strong> ／ <strong>%2$d</strong>',
 	'PAGE_TITLE_NUMBER'		=> '%s ページ目',
 	'PASSWORD'				=> 'パスワード',

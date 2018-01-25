@@ -107,6 +107,7 @@ $lang = array_merge($lang, array(
 // Forum Permissions
 $lang = array_merge($lang, array(
 		'ACL_F_LIST'		=> 'フォーラムの閲覧',
+		'ACL_F_LIST_TOPICS' => 'トピックの閲覧',
 		'ACL_F_READ'		=> 'フォーラムへ入室',
 		'ACL_F_SEARCH'		=> 'フォーラム内検索',
 		'ACL_F_SUBSCRIBE'	=> 'フォーラムのウォッチ',

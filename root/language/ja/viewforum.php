@@ -54,6 +54,7 @@ $lang = array_merge($lang, array(
 	'NO_NEW_POSTS_HOT'		=> '新しい記事なし [ 人気 ]',	// Not used anymore
 	'NO_NEW_POSTS_LOCKED'	=> '新しい記事なし [ 閉鎖中 ]',	// Not used anymore
 	'NO_READ_ACCESS'		=> 'このフォーラムの記事を閲覧する権限がありません',
+	'NO_FORUMS_IN_CATEGORY'	=> 'このカテゴリにフォーラムはありません。',
 	'NO_UNREAD_POSTS_HOT'		=> '未読記事なし [ 人気 ]',
 	'NO_UNREAD_POSTS_LOCKED'	=> '未読記事なし [ 閉鎖中 ]',
 
