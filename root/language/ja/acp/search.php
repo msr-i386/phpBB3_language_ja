@@ -116,7 +116,10 @@ $lang = array_merge($lang, array(
 		2	=> '現在のインデクス作成速度はおよそ１秒間に %1$.1f 個です。<br />インデクスの作成はまだ進行中です…',
 	),
 	'SEARCH_INDEX_DELETE_REDIRECT'			=> array(
-		2	=> '記事ID %2$d までのインデクスを削除しました。<br />インデクスの削除はまだ進行中です…',
+		2	=> '記事ID %2$d までのインデクスを削除しました。このステップで %1$d 個の記事のインデクスを削除しました。<br />',
+	),
+	'SEARCH_INDEX_DELETE_REDIRECT_RATE'		=> array(
+		2	=> '現在のインデクス削除速度はおよそ１秒間に %1$.1f 個です。<br />インデクスの削除はまだ進行中です…',
 	),
 	'SEARCH_INDEX_CREATED'					=> 'インデクスの作成に成功しました',
 	'SEARCH_INDEX_REMOVED'					=> 'インデクスの削除に成功しました',

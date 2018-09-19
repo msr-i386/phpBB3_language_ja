@@ -49,7 +49,7 @@ $lang = array_merge($lang, array(
 
 	// Support page
 	'SUPPORT_TITLE'		=> 'サポート',
-	'SUPPORT_BODY'		=> 'phpBB3 の最新安定バージョンに関するサポートは無料で提供されています。サポートの内容は:</p><ul><li>インストール</li><li>各種設定</li><li>技術的な質問</li><li>ソフトウェアのバグに関する問題</li><li>リリース候補（RC）バージョンから最新安定バージョンへのアップデート</li><li>phpBB2.0.x から phpBB3 へのデータコンバート</li><li>他の掲示板ソフトウェアから phpBB3 へのデータコンバート（<a href="https://www.phpbb.com/community/viewforum.php?f=486">Convertors Forum</a> をご覧ください）</li></ul><p>もし phpBB3 のベータバージョンをまだ利用している場合、phpBB3 の最新安定バージョンを新しくインストールすることを強く勧めます。</p><h2>拡張機能 / スタイル</h2><p>拡張機能については <a href="https://www.phpbb.com/community/viewforum.php?f=451">Extensions Forum</a> の関連するトピックに質問・投稿してください。<br />スタイル、テンプレート、イメージセットについては、<a href="https://www.phpbb.com/community/viewforum.php?f=471">Styles Forum</a> の関連するトピックに質問・投稿してください。<br /><br />もし特定のバージョンについて質問したい場合、そのバージョン専用のトピックがありますのでそちらにご投稿ください。</p><h2>サポート</h2><p><a href="https://www.phpbb.com/community/viewtopic.php?f=14&amp;t=571070">The phpBB Welcome Package</a><br /><a href="https://www.phpbb.com/support/">Support Section</a><br /><a href="https://www.phpbb.com/support/docs/en/3.1/ug/quickstart/">Quick Start Guide</a><br /><br />最新ニュースと最新リリースのメールを購読するには <a href="https://www.phpbb.com/support/">subscribe to our mailing list</a> にてメールアドレスを入力し送信してください。<br /><br />',
+	'SUPPORT_BODY'		=> 'phpBB3 の最新安定バージョンに関するサポートは無料で提供されています。サポートの内容は:</p><ul><li>インストール</li><li>各種設定</li><li>技術的な質問</li><li>ソフトウェアのバグに関する問題</li><li>リリース候補（RC）バージョンから最新安定バージョンへのアップデート</li><li>phpBB2.0.x から phpBB3 へのデータコンバート</li><li>他の掲示板ソフトウェアから phpBB3 へのデータコンバート（<a href="https://www.phpbb.com/community/viewforum.php?f=486">Convertors Forum</a> をご覧ください）</li></ul><p>もし phpBB3 のベータバージョンをまだ利用している場合、phpBB3 の最新安定バージョンを新しくインストールすることを強く勧めます。</p><h2>拡張機能 / スタイル</h2><p>拡張機能については <a href="https://www.phpbb.com/community/viewforum.php?f=451">Extensions Forum</a> の関連するトピックに質問・投稿してください。<br />スタイル、テンプレート、イメージセットについては、<a href="https://www.phpbb.com/community/viewforum.php?f=471">Styles Forum</a> の関連するトピックに質問・投稿してください。<br /><br />もし特定のバージョンについて質問したい場合、そのバージョン専用のトピックがありますのでそちらにご投稿ください。</p><h2>サポート</h2><p><a href="https://www.phpbb.com/support/">Support Section</a><br /><a href="https://www.phpbb.com/support/docs/en/3.2/ug/quickstart/">Quick Start Guide</a><br /><br />最新ニュースと最新リリースを知るには <a href="https://www.twitter.com/phpbb/">Twitter</a> や <a href="https://www.facebook.com/phpbb/">Facebook</a> をフォローしてください。<br /><br />',
 
 	// License
 	'LICENSE_TITLE'		=> 'General Public License',
@@ -193,6 +193,7 @@ $lang = array_merge($lang, array(
 	'DB_OPTION_SQLITE3'		=> 'SQLite 3',
 
 	// Errors
+	'INST_ERR_DB'					=> 'データベースインストールエラー',
 	'INST_ERR_NO_DB'				=> '選択したデータベースを扱うために必要な PHP拡張モジュール のロードに失敗しました',
 	'INST_ERR_DB_INVALID_PREFIX'	=> '入力したテーブル接頭辞が不正です。ラテン系文字で始まり、以降はラテン系文字・数字・アンダースコアのみにする必要があります。',
 	'INST_ERR_PREFIX_TOO_LONG'		=> '入力した テーブル接頭辞 が長すぎます。%d 字以下にしてください。',
@@ -354,15 +355,38 @@ $lang = array_merge($lang, array(
 
 		<br />
 
+		<h1>フルパッケージによる更新方法</h1>
+
+		<p>フルパッケージを使用してアップデートすることが推奨されています。インストール中にphpBBコアファイルを独自に変更した場合、その変更を失わないようにするために自動更新パッケージを使用することも可能です。INSTALL.html で紹介されているアップデート方法でアップデートすることももちろん可能です。フルパッケージを使用したアップデートの手順:</p>
+
+		<ol style="margin-left: 20px; font-size: 1.1em;">
+			<li><strong class="error">全ての掲示板のファイルとデータベースをバックアップする</strong></li>
+			<li><a href="https://www.phpbb.com/downloads/" title="https://www.phpbb.com/downloads/">phpBB.com downloads page</a> をクリックして最新の "Full Package" をダウンロードする</li>
+			<li>ダウンロードしたパッケージを解凍する</li>
+			<li><em>パッケージ内の</em> ファイル <code class="inline">config.php</code> とフォルダー <code class="inline">/images</code>、 <code class="inline">/store</code> 、 <code class="inline">/files</code> を削除する (サーバーではない).</li>
+			<li>ACP - 掲示板の設定 へ移動し、prosilver がデフォルトスタイルとして設定されていることを確認する。設定されていなければ、prosilver に設定する。</li>
+			<li><code class="inline">/vendor</code> と <code class="inline">/cache</code> フォルダーを phpBBルートディレクトリから削除する</li>
+			<li>FTP または SSH 経由で残りのファイルとフォルダー (つまり、phpBB3 フォルダーの中に残っているデータ) をインストールするサーバーのルートフォルダーにアップロードする。すでに存在しているファイルを上書きする。 (注: アップロード時に <code class="inline">/ext</code> フォルダー内の拡張機能を削除しないように注意すること)</li>
+			<li><strong><a href="%1$s" title="%1$s">ブラウザから掲示板のインストールフォルダーを指定してアップデートを開始する</a></strong></li>
+			<li>手順に従ってデータベースを更新し、完了するまで実行する</li>
+			<li>FTP または SSH 経由でサーバー内の <code class="inline">/install</code> フォルダーを削除する<br><br></li>
+		</ol>
+		
+		<p>これで全てのユーザーと投稿を含んだ最新版になりました。続いて、次のタスクを実施してください:</p>
+		<ul style="margin-left: 20px; font-size: 1.1em;">
+			<li>言語パックの更新</li>
+			<li>スタイルの更新<br><br></li>
+		</ul>
+
 		<h1>自動アップデートパッケージによる更新方法</h1>
 
-		<p>以下の手順で自動アップデートすることが推奨されています。INSTALL.html で紹介されているアップデート方法でアップデートすることももちろん可能です。自動アップデートのステップは:</p>
+		<p>自動アップデートパッケージによる更新は phpBB コアファイルを独自に変更した場合に限り推奨されています。INSTALL.html で紹介されているアップデート方法でアップデートすることももちろん可能です。自動アップデートパッケージを使用した手順:</p>
 
-		<ul style="margin-left: 20px; font-size: 1.1em;">
-			<li><a href="https://www.phpbb.com/downloads/" title="https://www.phpbb.com/downloads/">phpBB.com downloads page</a> をクリックして "Automatic Update Package" をダウンロードする<br /><br /></li>
-			<li>ダウンロードしたパッケージを解凍する<br /><br /></li>
-			<li>解凍して出てきたフォルダ "install" と "vendor" を phpBB3ルートディレクトリ（config.php が存在するディレクトリ） にアップロードする<br /><br /></li>
-		</ul>
+		<ol style="margin-left: 20px; font-size: 1.1em;">
+			<li>Go to the <a href="https://www.phpbb.com/downloads/" title="https://www.phpbb.com/downloads/">phpBB.com downloads page</a> をクリックして "Automatic Update Package" をダウンロードする</li>
+			<li>ダウンロードしたパッケージを解凍する</li>
+			<li>解凍して出てきたフォルダ "install" と "vendor" を phpBB3ルートディレクトリ（config.php が存在するディレクトリ） にアップロードする<br><br></li>
+		</ol>
 
 		<p>アップロードが完了すると一般ユーザーは全てオフライン状態に移行します<br /><br />
 		<strong><a href="%1$s" title="%1$s">こちらをクリック</a>してアップデートを開始してください</strong><br />

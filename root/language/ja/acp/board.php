@@ -348,7 +348,7 @@ $lang = array_merge($lang, array(
 
 // Cookie Settings
 $lang = array_merge($lang, array(
-	'ACP_COOKIE_SETTINGS_EXPLAIN'	=> 'ここでは Cookie の設定を行うことができます。多くの場合、デフォルト設定のままで十分です。デフォルト設定を変更する場合は十分注意して行ってください。間違った設定をしてしまうと登録ユーザーがログインできなくなります。ログアウトできないユーザーが存在する場合は、<b><a href="https://www.phpbb.com/support/go/cookie-settings/">phpBB.com Knowledge Base - Fixing incorrect cookie settings</a></b>を参照してください。',
+	'ACP_COOKIE_SETTINGS_EXPLAIN'	=> 'ここでは Cookie の設定を行うことができます。多くの場合、デフォルト設定のままで十分です。デフォルト設定を変更する場合は十分注意して行ってください。間違った設定をしてしまうと登録ユーザーがログインできなくなります。ログアウトできないユーザーが存在する場合は、<strong><a href="https://www.phpbb.com/support/go/cookie-settings">phpBB.com Knowledge Base - Fixing incorrect cookie settings</a></strong>を参照してください。',
 
 	'COOKIE_DOMAIN'				=> 'Cookieドメイン',
 	'COOKIE_DOMAIN_EXPLAIN'		=> '多くの場合、Cookieドメインは必須ではありません。よくわからない場合は空のままにしてください。<br /><br /> 他のソフトウェアと統合したり、複数のドメインが存在する場合、Cookieドメインを指定する必要があります。たとえば、<i>example.com</i> と <i>forums.example.com</i> もしくは <i>forums.example.com</i> と <i>blog.example.com</i>を使用しているとすると、<i>example.com</i> のように共通のドメイン名になるまでサブドメインを消去します。そして、.example.com のように共通ドメインの先頭にドット(.)を追加します。',
@@ -404,6 +404,8 @@ $lang = array_merge($lang, array(
 	'READ_NOTIFICATION_EXPIRE_DAYS_EXPLAIN' => 'この日数が過ぎると通知が自動的に消えます。古い通知がユーザーに通知されなくなります。通知を自動的に消したくない場合は 0 をご入力ください。',
 	'RECOMPILE_STYLES'				=> 'テンプレートファイルの再コンパイル',
 	'RECOMPILE_STYLES_EXPLAIN'		=> 'スタイルを構成する各テンプレートファイルが更新されているかどうかを常にチェックし、更新されていた場合は再コンパイルします',
+	'YES_ACCURATE_PM_BUTTON'			=> 'トピックページのパーミッションに応じて PM ボタンを表示する',
+	'YES_ACCURATE_PM_BUTTON_EXPLAIN'	=> '“はい” にした場合、プライベートメッセージの読込権限があるユーザーにのみプライベートメッセージボタンが表示されるようになります。',
 	'YES_ANON_READ_MARKING'			=> 'ゲストに対してもトピックの 既読/未読 を有効にする',
 	'YES_ANON_READ_MARKING_EXPLAIN'	=> 'ゲストに対するトピックの 既読/未読 情報を保存します。無効に設定した場合、ゲストに対して全てのトピックが既読状態になります。',
 	'YES_BIRTHDAYS'					=> '誕生日リストを有効にする',
@@ -585,7 +587,7 @@ $lang = array_merge($lang, array(
 	'SMTP_POP_BEFORE_SMTP'			=> 'POP-BEFORE-SMTP',
 	'SMTP_PORT'						=> 'SMTPサーバポート番号',
 	'SMTP_PORT_EXPLAIN'				=> 'SMTPサーバポート番号 が通常（25番ポート）と異なっている場合のみ変更してください',
-	'SMTP_SERVER'					=> 'SMTPサーバ アドレス',
+	'SMTP_SERVER'					=> 'SMTPサーバ アドレスとプロトコル',
 	'SMTP_SERVER_EXPLAIN'			=> 'SMTPサーバ が使用するプロトコルを入力する必要があることに注意してください。SSL を使用している場合、"ssl://your.mailserver.com" のように設定しなければなりません',
 	'SMTP_SETTINGS'					=> 'SMTP設定',
 	'SMTP_USERNAME'					=> 'SMTPユーザー名',
