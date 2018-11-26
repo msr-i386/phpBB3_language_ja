@@ -88,6 +88,7 @@ $lang = array_merge($lang, array(
 	'NO_UNREAD_POSTS'		=> 'このトピックに未読記事はありません',
 	'NO_VOTE_OPTION'		=> '投票オプションを選択してください',
 	'NO_VOTES'				=> '0 票',
+	'NO_AUTH_PRINT_TOPIC'	=> 'トピックを印刷する権限がありません',
 
 	'POLL_ENDED_AT'			=> '投票は %s を以って終了致しました',
 	'POLL_RUN_TILL'			=> '投票は %s を以って終了致します',

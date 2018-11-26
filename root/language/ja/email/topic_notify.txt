@@ -1,4 +1,5 @@
 Subject: 新着記事の通知 - トピック "{TOPIC_TITLE}"
+List-Unsubscribe: <{U_STOP_WATCHING_TOPIC}>
 
 {USERNAME} さん
 

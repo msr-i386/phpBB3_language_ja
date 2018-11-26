@@ -1,4 +1,5 @@
 Subject: 新着記事の通知 - フォーラム "{FORUM_NAME}"
+List-Unsubscribe: <{U_STOP_WATCHING_FORUM}>
 
 {USERNAME} さん
 

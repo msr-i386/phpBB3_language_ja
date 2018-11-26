@@ -111,8 +111,6 @@ $lang = array_merge($lang, array(
 
 	'IMAGE_LINK_SIZE'			=> 'リンク表示の画像サイズ',
 	'IMAGE_LINK_SIZE_EXPLAIN'	=> 'このサイズ以上の添付画像が読み込まれた場合、画像ではなくリンクとして表示されます。この機能を無効にしたい場合、 0 x 0 px としてください。 ',
-	'IMAGICK_PATH'				=> 'ImageMagick へのパス',
-	'IMAGICK_PATH_EXPLAIN'		=> 'ImageMagick へのフルパスです。例 <samp>/usr/bin/</samp>',
 
 	'MAX_ATTACHMENTS'				=> '記事１件あたりの添付ファイル最大数',
 	'MAX_ATTACHMENTS_PM'			=> 'プライベートメッセージ１件あたりの添付ファイル最大数',
@@ -135,7 +133,6 @@ $lang = array_merge($lang, array(
 	'NO_EXT_GROUP_SPECIFIED'	=> '拡張子グループが指定されていません。',
 	'NO_FILE_CAT'				=> 'なし',
 	'NO_IMAGE'					=> 'なし',
-	'NO_THUMBNAIL_SUPPORT'		=> 'サムネイルを表示できない環境にあります。サムネイルを表示させるには GD拡張モジュール が利用可能であるかまたは ImageMagick がサーバにインストールされている必要があります。',
 	'NO_UPLOAD_DIR'				=> 'アップロードディレクトリが存在しません',
 	'NO_WRITE_UPLOAD'			=> 'アップロードディレクトリに書き込みできません。アップロードするにはディレクトリのアクセス権を変更する必要があります。',
 
@@ -147,7 +144,6 @@ $lang = array_merge($lang, array(
 	'REMOVE_DISALLOWED_IPS'			=> '<em>ダウンロードリスト [ 拒否 ]</em> から IPアドレス/ホスト名 を削除',
 	'RESYNC_FILES_STATS_CONFIRM'	=> 'ファイルの統計データを本当に同期してもよろしいですか？',
 	
-	'SEARCH_IMAGICK'				=> 'ImageMagick を探す',
 	'SECURE_ALLOW_DENY'				=> 'ダウンロードリストのタイプ',
 	'SECURE_ALLOW_DENY_EXPLAIN'		=> 'セキュアダウンロードを有効にした場合、ダウンロードリストのタイプを 許可/拒否 のどちらにするか指定してください',
 	'SECURE_DOWNLOADS'				=> 'セキュアダウンロードを有効にする',

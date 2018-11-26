@@ -62,7 +62,6 @@ $lang = array_merge($lang, array(
 
 	'ACCOUNT_ALREADY_ACTIVATED'		=> 'あなたのアカウントは既に有効化されています',
 	'ACCOUNT_DEACTIVATED'			=> 'あなたのアカウントは現在無効です。ログインするには Admin によるアカウントの有効化が必要です',
-	'ACCOUNT_NOT_ACTIVATED'			=> 'あなたのアカウントはまだ有効化されていません',
 	'ACP'							=> 'Adminコントロールパネル',
 	'ACP_SHORT'						=> 'AdminCP',
 	'ACTIVE'						=> '有効',
